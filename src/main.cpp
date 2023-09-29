@@ -4,7 +4,7 @@ class MainFrame final : public wxFrame
 {
 public:
     MainFrame()
-        : wxFrame(nullptr, wxID_ANY, wxT("wxWidgets Quick Starter")) {
+        : wxFrame(nullptr, wxID_ANY, "Quick Starter") {
         CreateControls();
     }
 
@@ -17,7 +17,7 @@ private:
         auto mainSizer = new wxBoxSizer(wxVERTICAL);
         mainPanel->SetSizer(mainSizer);
 
-        auto starterLabel = new wxStaticText(mainPanel, wxID_ANY, wxT("wxWidgets Quick Starter"));
+        auto starterLabel = new wxStaticText(mainPanel, wxID_ANY, "Quick Starter");
         mainSizer->Add(starterLabel, wxSizerFlags().Center());
     }
 };
